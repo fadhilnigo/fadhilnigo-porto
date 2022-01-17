@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from "./pages/Home";
 import Project from "./pages/Project";
 import Navbar from './component/Navbar'
+import Footer from "./component/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css"
 
@@ -20,6 +21,7 @@ function App() {
           <Route path={'/'} element={<Home />} />
           <Route path={'/project/:projectId'} element={<Project />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );

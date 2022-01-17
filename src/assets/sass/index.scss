@@ -95,12 +95,21 @@ nav {
   background-color: $blue;
 }
 
-footer {
-  overflow: hidden;
-  background-color: #01304C;
-  border-bottom: solid 13px #E71B23;
+.bg-white {
+  background-color: $white;
+}
 
-  @media #{$large} {
-    border-bottom: solid 10px #E71B23;
+footer {
+  margin: 0 auto;
+  p {
+    text-align: center;
+    a {
+      text-decoration: underline;
+    }
   }
+  
+
+  // @media #{$large} {
+    
+  // }
 }
