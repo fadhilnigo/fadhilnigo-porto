@@ -1,3 +1,4 @@
+import Slider from '../component/Slider'
 import profile from '../assets/images/profile.png'
 import vectorBlue from '../assets/images/vector-blue.svg'
 import vectorPink from '../assets/images/vector-pink.svg'
@@ -28,9 +29,9 @@ function Home() {
         </section>
       </header>
 
-      {/* Swiper */}
+      <Slider />
 
-      <body className="body-container">
+      <main className="body-container">
         <section className="section-container section-left bg-white">
           <div>
             <h1 data-aos="zoom-in">About Me</h1>
@@ -72,7 +73,7 @@ function Home() {
             </a>
           </div>
         </section>
-      </body>
+      </main>
     </>
   )
 }
