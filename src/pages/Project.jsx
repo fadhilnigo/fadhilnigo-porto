@@ -1,8 +1,16 @@
+import ProjectCard from "../component/ProjectCard"
+import Slider from "../component/Slider"
+
 function Project() {
   return (
-    <div>
-      This is Project Page
-    </div>
+    <>
+      <section>
+        <Slider />
+      </section>
+      <section>
+        <ProjectCard />
+      </section>
+    </>
   )
 }
 
