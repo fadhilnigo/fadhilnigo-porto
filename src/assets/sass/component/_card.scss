@@ -1,0 +1,33 @@
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 27px;
+  .card-container {
+    background-color: $secondary;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px $dark-charcoal;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    .img-container {
+      display: flex;
+      position: relative;
+      width: 100%;
+      padding-top: 300px;
+      overflow: hidden;
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all .2s ease-out;
+        object-fit: cover;
+        &:hover {
+          transform: scale(1.2);
+          overflow: hidden;
+        }
+      }
+
+    }
+  }
+}
