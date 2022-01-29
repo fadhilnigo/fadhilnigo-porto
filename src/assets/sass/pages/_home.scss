@@ -32,6 +32,11 @@
         margin-left: 18%;
         margin-right: 10%;
       }
+      @media #{$extra_large} {
+        margin-top: 32vh;
+        margin-left: 18%;
+        margin-right: 10%;
+      }
       h1 {
         color: $dark-charcoal;
         font-size: 36px;
@@ -67,6 +72,12 @@
         margin-top: 110px;
         height: 400px;
         width: 400px;
+        margin-left: 10%;
+      }
+      @media #{$extra_large} {
+        margin-top: 110px;
+        height: 550px;
+        width: 550px;
         margin-left: 15%;
       }
       .profile-img {
@@ -78,6 +89,10 @@
       }
       .background-img {
         position: absolute;
+        @media #{$extra_large} {
+          margin-top: 75px;
+          margin-left: 5%;
+        }
       }
       .shape-pink {
         top: 60px;
@@ -86,9 +101,15 @@
           top: 75px;
           left: 25px;
         }
+        @media #{$extra_large} {
+          width: 500px;
+        }
       }
       .shape-blue {
         left: -30px;
+        @media #{$extra_large} {
+          width: 500px;
+        }
       }
       .star-pink {
         right: 25px;

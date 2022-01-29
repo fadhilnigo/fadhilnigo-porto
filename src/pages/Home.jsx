@@ -21,10 +21,12 @@ function Home() {
         <section className="section-container bg-blue">
           <div className="img-container" data-aos="zoom-in">
             <img src={profile} alt="fadhil" className="profile-img" />
-            <img src={vectorBlue} alt="background" className="background-img shape-blue" />
-            <img src={vectorPink} alt="background" className="background-img shape-pink" />
-            <img src={starBlue} alt="background" className="background-img star-blue" />
-            <img src={starPink} alt="background" className="background-img star-pink" />
+            <div>
+              <img src={vectorBlue} alt="background" className="background-img shape-blue" />
+              <img src={vectorPink} alt="background" className="background-img shape-pink" />
+              <img src={starBlue} alt="background" className="background-img star-blue" />
+              <img src={starPink} alt="background" className="background-img star-pink" />
+            </div>
           </div>
         </section>
       </header>
