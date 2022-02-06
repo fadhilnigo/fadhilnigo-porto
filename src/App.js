@@ -11,6 +11,7 @@ import ProjectIbc from "./pages/ProjectIbc";
 import Navbar from './component/Navbar'
 import Footer from "./component/Footer";
 import PrivateRoute from "./component/PrivateRoute";
+import ScrollToTop from "./hooks/scrollToTop";
 import AOS from "aos";
 import "aos/dist/aos.css"
 
@@ -18,21 +19,23 @@ function App() {
   useEffect(() => {
     AOS.init()
     AOS.refresh();
+
   }, [])
 
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
 
           {/* Temporary Project Page */}
-          <Route path= '/project' /*'/project/:projectId' */ element={<Project />} />
-          <Route path='/project/github-finder' element={<GithubFinder />} />
-          <Route path='/project/project-ibc' element={<ProjectIbc />} />
-          <Route path='/project/house-marketplace' element={<Housemarketplace />} />
-          <Route path='/project/feedback-app' element={<FeedbackApp />} />
+          <Route path= '/portofolio' /*'/project/:projectId' */ element={<Project />} />
+          <Route path='/portofolio/github-finder' element={<GithubFinder />} />
+          <Route path='/portofolio/project-ibc' element={<ProjectIbc />} />
+          <Route path='/portofolio/house-marketplace' element={<Housemarketplace />} />
+          <Route path='/portofolio/feedback-app' element={<FeedbackApp />} />
           {/* Will make feature for auto fill project pages */}
 
           <Route path='/sign-in' element={<SignIn />} />
