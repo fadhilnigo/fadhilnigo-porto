@@ -17,6 +17,7 @@
     }
     @media #{$large} {
       height: 100vh;
+      min-height: 650px;
     }
     .section-content {
       margin-top: 20vh;
@@ -33,7 +34,7 @@
         margin-right: 10%;
       }
       @media #{$extra_large} {
-        margin-top: 32vh;
+        margin-top: 25vh;
         margin-left: 18%;
         margin-right: 10%;
       }
@@ -75,10 +76,10 @@
         margin-left: 10%;
       }
       @media #{$extra_large} {
-        margin-top: 110px;
+        margin-top: 50px;
         height: 550px;
         width: 550px;
-        margin-left: 15%;
+        margin-left: 5%;
       }
       .profile-img {
         position: absolute;
