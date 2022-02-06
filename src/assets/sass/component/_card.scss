@@ -1,33 +1,85 @@
-.project-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 27px;
-  .card-container {
-    background-color: $secondary;
-    border-radius: 4px;
-    box-shadow: 0 3px 6px $dark-charcoal;
-    outline: none;
-    overflow: hidden;
-    position: relative;
-    text-decoration: none;
-    .img-container {
-      display: flex;
-      position: relative;
-      width: 100%;
-      padding-top: 300px;
+.project-card--container {
+  max-width: 1280px;
+  width: 94%;
+  margin: 0 auto;
+  .project-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    @media #{$medium} {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media #{$large} {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 27px;
+    }
+    .card-container {
+      background-color: #ffffff ;
+      border-radius: 4px;
+      box-shadow: 0 3px 6px $dark-charcoal;
+      outline: none;
       overflow: hidden;
-      img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        transition: all .2s ease-out;
-        object-fit: cover;
-        &:hover {
-          transform: scale(1.2);
-          overflow: hidden;
+      position: relative;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      @media #{$medium} {
+        flex-direction: column;
+      }
+      .img-container {
+        display: flex;
+        position: relative;
+        min-width: 50%;
+        min-height: 100px;
+        max-height: 200px;
+        overflow: hidden;
+        @media #{$medium} {
+          min-width: none;
+          max-width: none;
+          width: 100%;
+        }
+        img {
+          transition: all .2s ease-out;
+          object-fit: cover;
+          height: 100%;
+          margin: auto;
+          @media #{$medium} {
+            width: 100%;
+            height: initial;
+          }
+          &:hover {
+            @media #{$medium} {
+              transform: scale(1.2);
+              overflow: hidden;
+            }
+          }
         }
       }
-
+      .content-container {
+        display: flex;
+        align-items: center;
+        @media #{$medium} {
+          display: block;
+          align-items: normal;
+        } 
+        .text-container {
+          overflow: hidden;
+          padding-top: 0;
+          margin: 0;
+          padding: 8px;
+          @media #{$medium} {
+            padding: 14px;
+          }
+          p {
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+        }
+      }
     }
   }
 }

@@ -42,26 +42,25 @@ function ProjectCard() {
 
   return (
     swiperAssets && (
-    <main>
+    <main className="project-card--container">
       <div className="project-card">
         {swiperAssets.map(({ data,id }) => (
-          <div key={id} className="card-container">
+          <a 
+            key={id} 
+            className="card-container" 
+            onClick={()=> navigate(`/portofolio/${data.swiperLink}`)}
+            data-aos="zoom-in"
+          >
             <div className="img-container">
               <img src={data.swiperImg[0]} alt={data.name} />
             </div>
-            <div>
-              <h3>{data.name}</h3>
-              <p>{data.swiperText}</p>
+            <div className="content-container">
+              <div className="text-container">
+                <h3>{data.name}</h3>
+                <p>{data.swiperText}</p>
+              </div>
             </div>
-            <div>
-              <button 
-                className="btn--pils"
-                onClick={() => navigate(`/project/${data.swiperLink}`)}
-              >
-                Read More
-              </button>
-            </div>
-          </div>
+          </a>
         ))}
       </div>  
     </main>
