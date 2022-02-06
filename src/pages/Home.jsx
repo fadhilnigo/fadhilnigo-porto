@@ -6,8 +6,12 @@ import starPink from '../assets/images/star-pink.svg'
 import starBlue from '../assets/images/star-blue.svg'
 import mailIcon from '../assets/images/mail.svg'
 import githubIcon from '../assets/images/github.svg'
+import { useNavigate } from 'react-router-dom'
 
 function Home() {
+
+  const navigate = useNavigate()
+
   return (
     <>      
       <header className="home-container">
@@ -15,7 +19,12 @@ function Home() {
           <div className="section-content" data-aos="zoom-in">
             <h1>Hi, I'm Fadhil Panigoro Rahardjo, a <span>self-taught</span> front-end developer.</h1>
             <p>Look around and see my portfolio</p>
-            <button className="btn--pils">SEE MY PORTFOLIO</button>
+            <button 
+              className="btn--pils"
+              onClick={() => navigate("/portofolio")}  
+            >
+              SEE MY PORTFOLIO
+            </button>
           </div>
         </section>
         <section className="section-container bg-blue">
@@ -60,7 +69,7 @@ function Home() {
             </div>
           </div>
         </section>
-        <section className="section-container section-right bg-blue">
+        <section className="section-container section-right bg-blue" id="contact">
           <div className="content-container">
             <h1 data-aos="zoom-in">Get in Touch</h1>
             <p data-aos="zoom-in">Feel free to contact me anytime! I'll get back to you as soon as possible. </p>
@@ -69,7 +78,7 @@ function Home() {
               fadhilnigo@gmail.com
             </p>
             <p data-aos="zoom-in">Know more about my code by looking around my github!</p>
-            <a href="https://github.com/fadhilnigo" className="text-contact" data-aos="zoom-in">
+            <a href="https://github.com/fadhilnigo" className="text-contact" data-aos="zoom-in" target="_blank" rel="noreferrer noopener">
               <img src={githubIcon} alt="Github Icon" className="body-icon" />
               https://github.com/fadhilnigo
             </a>

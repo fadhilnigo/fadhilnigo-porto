@@ -3,14 +3,17 @@ import Slider from "../component/Slider"
 
 function Project() {
   return (
-    <>
-      <section>
+    <div className="portofolio-container">
+      <header className="portofolio-header">
+        <h1>PORTOFOLIO</h1>
+      </header>
+      <section className="section--slider">
         <Slider />
       </section>
-      <section>
+      <section className="section--card">
         <ProjectCard />
       </section>
-    </>
+    </div>
   )
 }
 
