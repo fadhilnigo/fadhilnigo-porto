@@ -1,0 +1,94 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  opacity: 0;
+  .modal-content {
+    width: 500px;
+    background-color: $white;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-200px);
+    box-shadow: 0 3px 6px $dark-charcoal;
+    margin-right: 5%;
+    margin-left: 5%;
+    .modal-header, .modal-footer {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      h4 {
+        font-size: 20px;
+      }
+      .button {
+        border-radius: 22px;
+        display: inline-block;
+        padding: 12px 27px;
+        border: none;
+        font-family: inherit;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        user-select: none;
+        font-weight: 700;
+        background-color: $vanilla-ice;
+        color: $white;
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        &:hover {
+          background-color: lighten($vanilla-ice, 8%);
+        }
+        &:focus {
+            outline: none;
+        }
+      }
+    }
+    .modal-title {
+      margin: 0;
+    }
+    .modal-body {
+      padding: 10px;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      p {
+        margin-top: 0;
+        color: $grey;
+        font-size: 16px;
+      }
+      .text-contact {
+        color: $dark-charcoal;
+        text-decoration: underline;
+        font-size: 16px;
+      }
+      .body-icon {
+        margin-right: 2%;
+        width: 16px;
+      }
+    }
+  }
+}
+
+.modal.enter-done {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.modal-exit {
+  opacity: 0;
+}
+
+.modal.enter-done .modal-content {
+  transform: translateY(0);
+}
+
+.modal.exit .modal-content {
+  transform: translateY(-200px);
+}

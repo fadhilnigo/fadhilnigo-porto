@@ -69,7 +69,7 @@ function Slider() {
                   <div>
                     <button
                       className="btn--pils btn-swiper"
-                      onClick={() => navigate(`/project/${data.swiperLink}`)}
+                      onClick={() => navigate(`/portofolio/${data.swiperLink}`)}
                     >
                       Read More
                     </button> 
