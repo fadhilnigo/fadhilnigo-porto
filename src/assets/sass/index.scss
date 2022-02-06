@@ -70,24 +70,39 @@ main{
 // 	width: 100%;
 // }
 
-nav {
-  background: transparent;
-  position: absolute;
+.navbar-sticky {
+  background: white;
+  position: sticky;
+  top: 0;
+  left: 0;
   z-index: 4;
   width: 100%;
+  box-shadow: 0 1px 2px $dark-charcoal;
   .navbar {
     display: flex;
     justify-content: flex-end;
-    margin-right: 5%;
-    margin-top: 24px;
-    @media #{$medium} {
-      margin-top: 20px;
-      margin-right: 10%;
-    }
+    margin-right: 1%;
+    height: 100%;
     .nav-link {
+      cursor: pointer;
       color: black;
+      margin-top: 8px;
+      margin-bottom: 8px;
       padding: 5px 10px;
       font-size: 16px;
+      @media #{$medium} {
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+    }
+    .btn-active {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 1%;
+    }
+    .btn-disable {
+      display: none;
     }
   }
 }
@@ -102,8 +117,14 @@ nav {
 
 footer {
   margin: 0 auto;
+  box-shadow: 0 -1px 2px $dark-charcoal;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   p {
     text-align: center;
+    margin: 0;
     a {
       text-decoration: underline;
     }
