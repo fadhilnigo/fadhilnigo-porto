@@ -8,6 +8,7 @@ import GithubFinder from "./pages/GithubFinder";
 import Housemarketplace from "./pages/Housemarketplace";
 import FeedbackApp from "./pages/FeedbackApp";
 import ProjectIbc from "./pages/ProjectIbc";
+import FadhilPorto from "./pages/FadhilPorto"
 import Navbar from './component/Navbar'
 import Footer from "./component/Footer";
 import PrivateRoute from "./component/PrivateRoute";
@@ -36,6 +37,7 @@ function App() {
           <Route path='/portofolio/project-ibc' element={<ProjectIbc />} />
           <Route path='/portofolio/house-marketplace' element={<Housemarketplace />} />
           <Route path='/portofolio/feedback-app' element={<FeedbackApp />} />
+          <Route path='/portofolio/fadhilnigo-porto' element={<FadhilPorto />} />
           {/* Will make feature for auto fill project pages */}
 
           <Route path='/sign-in' element={<SignIn />} />

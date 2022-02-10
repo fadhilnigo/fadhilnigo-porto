@@ -50,7 +50,7 @@ function Home() {
               follow the latest technology by learning and programming using Next.js.
               <br />
               I'm a self-taught front-end developer who will constantly seeking out new technologies 
-              and staying up-to-date on trends in the industry even though my major is Bioenergy and kemurgy engineering.   
+              and staying up-to-date on trends in the industry even though my major is Bioenergy and Chemurgy engineering.   
             </p>
             <p data-aos="zoom-in">Here are few technologies I've been learning on recently:</p>
             <div>

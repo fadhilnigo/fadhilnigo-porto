@@ -16,21 +16,28 @@ function GithubFinder() {
           <div  className="content-wrap">
             <div className="body-wrap">
               <h1 className="content-title">About This Project<hr></hr></h1>
-              <p className="content-text">This is a project</p>
+              <p className="content-text">
+                Website applications to search of some github user and see their profile summary,
+                It is one of the projects on React Front to Back 2022 course for practice to understand
+                how to fetch external API using Axios and manage it using context.
+              </p>
             </div>
             <div className="body-wrap">
               <h1 className="content-title">Technical<hr></hr></h1>
-              <p>Technologies i used in this project:</p>
+              <p>Technologies involved while working on this project:</p>
               <ul>
-                <li>Next js</li>
-                <li>Next js</li>
-                <li>Next js</li>
-                <li>Next js</li>
+                <li>Javascript framework React JS</li>
+                <li>CSS framework Tailwind CSS</li>
+                <li>Tailwind component DaisyUI</li>
+                <li>Promise based HTTP client Axios</li>
+                <li>State management using React Context</li>
               </ul>
             </div>
 
             <div className="content-footer body-wrap">
-              <p className="content-text">Repo: <a>https://github.com/fadhilnigo/github-finder</a></p>
+              <p className="content-text">Repo: <a href="https://github.com/fadhilnigo/github-finder" 
+                target="_blank" 
+                rel="noreferrer noopener">github.com/fadhilnigo/github-finder</a></p>
               <a 
                 className="btn-container" 
                 href="https://github-finder-indol-five.vercel.app/" 
